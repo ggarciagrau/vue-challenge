@@ -1,6 +1,10 @@
+/**
+ * @deprecated
+ * @see useFetchArticles
+ */
 import axios from "axios";
-import type { Article } from "@/typings/app/models/article";
-import type { Response } from "@/typings/external/services/news/response";
+import type { Article } from "@/typings/app/models/Article";
+import type { Response } from "@/typings/external/services/news/Response";
 
 const URL = 'https://newsapi.org/v2/everything?q=MESSI&from=2023-09-20&sortBy=publishedAt&apiKey=a4c1ea306eca429c8aa2c28b1884cd45';
 

@@ -1,4 +1,4 @@
-import type { Article } from "@/typings/app/models/article"
+import type { Article } from "@/typings/app/models/Article"
 
 export type Response = {
     articles: Article[],

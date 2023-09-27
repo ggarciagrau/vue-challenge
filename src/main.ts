@@ -6,6 +6,12 @@ import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
 
+// Quasar
+import { Quasar } from 'quasar'
+import '@quasar/extras/material-icons/material-icons.css'
+import 'quasar/src/css/index.sass'
+
+
 // Vuetify
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
@@ -27,6 +33,9 @@ app.use(Vue3Toastify, {
   autoClose: 3000,
   position: 'top-right'
 } as ToastContainerOptions)
-app.use(vuetify);
+app.use(vuetify)
+app.use(Quasar, {
+  plugins: {},
+})
 
 app.mount('#app')
